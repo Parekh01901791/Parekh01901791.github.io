@@ -1,0 +1,51 @@
+<!--
+File: index.html
+GUI Assignment: Homework 5 Scrabble WebPage
+This allows the used to drag letters into boxes to create a word and updates the score and total letters left.
+Used jquery's drag and drop and $(this).
+Mihir Parekh, UMass Lowell Computer Science,
+Mihir_Parekh@student.uml.edu
+Copyright (c) 2021 by Wenjin. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by WZ on December 18, 2023 at 11:30 PM
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scrabble Homework</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+
+    <h1>Mihir's Scrabble Game</h1>
+ 
+    <div id="scrabbleBoard">
+        <div id="scoreContainer">
+          <p id="scoreText">The score is: </p>
+          <p id="remaining">Remaining Total Tiles: </p>
+        </div>
+        <div class="word_drop ui-droppable" row="0" col="1"></div>
+        <div class="double_drop ui-droppable" row="0" col="2"></div>
+        <div class="word_drop ui-droppable" row="0" col="3"></div>
+        <div class="word_drop ui-droppable" row="0" col="4"></div>
+        <div class="word_drop ui-droppable" row="0" col="5"></div>
+        <div class="double_drop ui-droppable" row="0" col="6"></div>
+        <div class="word_drop ui-droppable" row="0" col="7"></div>
+
+        <div class="rack ui-droppable" ></div>
+    </div>
+
+    <div class="buttonBox">
+      <button id="nextWordButton" onclick="nextWord()" >Next Word</button>
+      <button id="restartButton" onclick="restart()">Start Over</button>
+    </div>
+ 
+    
+</body>
+</html>

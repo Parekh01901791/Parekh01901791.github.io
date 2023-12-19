@@ -1,0 +1,26 @@
+<!--
+File: index.html
+GUI Assignment: Homework 5 Scrabble WebPage
+This allows the used to drag letters into boxes to create a word and updates the score and total letters left.
+Used jquery's drag and drop and $(this).
+Mihir Parekh, UMass Lowell Computer Science,
+Mihir_Parekh@student.uml.edu
+Copyright (c) 2021 by Wenjin. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by WZ on December 18, 2023 at 11:30 PM
+-->
+
+
+Homework 5 Write Up Document:
+
+Mihir Parekh
+12/18/2023
+
+
+Features Currently Working:
+I am able to list the total letter remaining from the ScrabbleTiles array on the home page, which constantly updates as nextWord button is pressed
+I am able to calculate the score of the given scrabble one line board I created, adding the number values of the words and if the specific letter is on a double_drop I multiply the letter value of the specific letter by 2. 
+I am able to drag and drop my word_drag tiles to the word_drop areas and limit only one, so for example if the word_drop is occupied you can drop another there. 
+I’d say my scrabble game is partially working because I do not check a dictionary for the word to see if it exists, therefore making it an ever winning scrabble game. Also I can’t remove a word_drag tile once dropped on a word_drop item. 
+Also my two buttons, nextButton and restart work perfectly. If restart is clicked it reloads the entire page, clearing everything. And my nextWord button is able to update score and total remaining tiles and clear the current letters placed on the word_drops.
+
