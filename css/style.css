@@ -1,0 +1,109 @@
+/* <!--
+File: index.html
+GUI Assignment: Homework 5 Scrabble WebPage
+This allows the used to drag letters into boxes to create a word and updates the score and total letters left.
+Used jquery's drag and drop and $(this).
+Mihir Parekh, UMass Lowell Computer Science,
+Mihir_Parekh@student.uml.edu
+Copyright (c) 2021 by Wenjin. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by WZ on December 18, 2023 at 11:30 PM
+--> */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#scrabbleBoard {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.word_drop {
+    background-image: url("../img/Scrabble_Tiles/Scrabble_Tile_Blank.jpg");
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    background-size: cover;
+    vertical-align: middle; 
+    margin: 0 5px; 
+}
+
+.double_drop {
+    background-image: url("../img/double_word_score.jpeg");
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    background-size: cover;
+    vertical-align: middle; 
+    margin: 0 5px; 
+}
+
+.word_drag {
+    background-image: url("../img/Scrabble_Tiles/Scrabble_Tile_Blank.jpg");
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    background-size: cover;
+    vertical-align: middle; 
+    margin: 0 5px; 
+}
+
+.rack {
+    background-image: url("../scrabble-tile-holder-406774_640.png");
+    background-position: bottom;
+    width: 640px;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.buttonBox {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#nextWordButton,
+#restartButton {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 10px 20px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px; 
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+}
+
+#nextWordButton:hover,
+#restartButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+#scoreContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #scoreText {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 150px;
+  }
+  #remaining {
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 150px;
+
+  }
+  
